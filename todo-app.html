@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Todo App Tutorial | Coding Learning Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container nav">
+      <div class="logo">Coding Learning Hub</div>
+      <nav>
+        <a href="index.html">← Back to Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container tutorial-page">
+    <article class="tutorial-content">
+      <header class="tutorial-header">
+        <span class="tag angular">Angular · Project · Beginner</span>
+        <h1>Build a Todo App with Local Storage</h1>
+        <p class="tutorial-meta">
+          <span>5 min read</span>
+          <span>Feb 8, 2026</span>
+        </p>
+      </header>
+
+      <section class="tutorial-section">
+        <h2>What you'll build</h2>
+        <p>A simple todo app that saves tasks in your browser. No backend needed.</p>
+        <img src="https://via.placeholder.com/800x400/1e293b/3b82f6?text=Todo+App+Demo" alt="Todo app demo" class="demo-image">
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Prerequisites</h2>
+        <ul class="simple-list">
+          <li>Basic Angular knowledge (components)</li>
+          <li>Angular CLI installed</li>
+          <li>VS Code</li>
+        </ul>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Step 1: Create new Angular project</h2>
+        <pre><code class="language-bash">ng new todo-app
+cd todo-app
+ng serve</code></pre>
+        <p>Open <code>http://localhost:4200</code> to see it working.</p>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Step 2: Create Todo Component</h2>
+        <pre><code class="language-bash">ng generate component todo</code></pre>
+        <p>Edit <code>todo.component.ts</code>:</p>
+        <pre><code class="language-ts">export class TodoComponent {
+  tasks: string[] = [];
+  
+  addTask(task: string) {
+    if (task.trim()) {
+      this.tasks.push(task);
+      localStorage.setItem('todos', JSON.stringify(this.tasks));
+    }
+  }
+}</code></pre>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Step 3: Add HTML template</h2>
+        <p>Edit <code>todo.component.html</code>:</p>
+        <pre><code class="language-html">&lt;input [(ngModel)]="newTask" 
+            placeholder="Enter task..." (keyup.enter)="addTask(newTask)"&gt;
+  &lt;ul&gt;
+    &lt;li *ngFor="let task of tasks"&gt;{{task}}&lt;/li&gt;
+  &lt;/ul&gt;</code></pre>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Complete code</h2>
+        <p>Download full source: <a href="#" class="btn">Download ZIP</a> (add later)</p>
+      </section>
+
+      <section class="tutorial-section">
+        <h2>Next steps</h2>
+        <ul class="list">
+          <li>Add delete task functionality</li>
+          <li>Mark tasks as complete</li>
+          <li>Try with a real API instead of local storage</li>
+        </ul>
+      </section>
+
+      <!-- Ad placeholder -->
+      <div class="ad-space">
+        <p>Ad space – future monetization</p>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>More Angular tutorials</h3>
+        <ul>
+          <li><a href="#">Getting Started with Components</a></li>
+          <li><a href="#">Fetch API Data</a></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Coding Learning Hub</p>
+    </div>
+  </footer>
+</body>
+</html>
