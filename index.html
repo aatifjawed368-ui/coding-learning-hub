@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Learning Hub – Angular & Python</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container nav">
+      <div class="logo">Coding Learning Hub</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#angular">Angular</a>
+        <a href="#python">Python</a>
+        <a href="#roadmaps">Roadmaps</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Learn Angular & Python with Simple Projects</h1>
+        <p>Short, practical tutorials for beginners who want to build real things, not just read theory.</p>
+        <a href="#angular" class="btn">Start with Angular</a>
+        <a href="#python" class="btn btn-outline">Start with Python</a>
+      </div>
+    </section>
+
+    <!-- Featured paths -->
+    <section class="grid two-col section">
+      <div class="card">
+        <h2>Angular Path (Beginner → Intermediate)</h2>
+        <ul class="list">
+          <li>Intro to components and modules</li>
+          <li>Angular Todo App with Local Storage</li>
+          <li>API project: Fetch and display data</li>
+          <li>Routing, services, and basic state</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Python Path (Beginner → Automation)</h2>
+        <ul class="list">
+          <li>Python basics: variables, loops, functions</li>
+          <li>CLI tools: file renamer, calculator</li>
+          <li>Simple web requests & APIs</li>
+          <li>Automation mini-scripts</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ad placeholder -->
+    <section class="section ad-placeholder">
+      <p>Ad space (300×250) – place for future AdSense banner.</p>
+    </section>
+
+    <!-- Angular tutorials -->
+    <section id="angular" class="section">
+      <h2>Angular Tutorials</h2>
+      <div class="grid three-col">
+        <article class="card">
+          <span class="tag angular">Angular · Beginner</span>
+          <h3>Getting Started with Angular Components</h3>
+          <p>Understand components, templates, and basic data binding with a simple example app.</p>
+          <a href="#" class="link">Read tutorial</a>
+        </article>
+        <article class="card">
+          <span class="tag angular">Angular · Project</span>
+          <h3>Build a Todo App with Local Storage</h3>
+          <p>Create a clean todo app, persist tasks in the browser, and structure your code properly.</p>
+          <a href="#" class="link">Read tutorial</a>
+        </article>
+        <article class="card">
+          <span class="tag angular">Angular · API</span>
+          <h3>Fetch API Data and Show in Cards</h3>
+          <p>Use HttpClient to call a public API and display results in a responsive grid.</p>
+          <a href="#" class="link">Read tutorial</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Python tutorials -->
+    <section id="python" class="section">
+      <h2>Python Tutorials</h2>
+      <div class="grid three-col">
+        <article class="card">
+          <span class="tag python">Python · Beginner</span>
+          <h3>Python Basics in One Page</h3>
+          <p>Quick introduction to variables, loops, functions, and input/output for complete beginners.</p>
+          <a href="#" class="link">Read tutorial</a>
+        </article>
+        <article class="card">
+          <span class="tag python">Python · Project</span>
+          <h3>File Renamer CLI Tool</h3>
+          <p>Write a Python script that renames multiple files in a folder in one go.</p>
+          <a href="#" class="link">Read tutorial</a>
+        </article>
+        <article class="card">
+          <span class="tag python">Python · API</span>
+          <h3>Simple Weather App in Terminal</h3>
+          <p>Call a weather API and show city temperature using a clean CLI interface.</p>
+          <a href="#" class="link">Read tutorial</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Roadmaps -->
+    <section id="roadmaps" class="section">
+      <h2>Learning Roadmaps</h2>
+      <div class="grid two-col">
+        <article class="card">
+          <h3>Web Dev Roadmap 2026</h3>
+          <p>HTML, CSS, JavaScript, Git, Angular, backend options, and deployment – a clear path for beginners.</p>
+          <a href="#" class="link">View roadmap</a>
+        </article>
+        <article class="card">
+          <h3>Angular from Zero to Job-Ready</h3>
+          <p>From basic components to APIs, routing, and simple state management, with project ideas.</p>
+          <a href="#" class="link">View roadmap</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="section">
+      <h2>Useful Resources</h2>
+      <div class="grid two-col">
+        <div class="card">
+          <h3>Free Learning Platforms</h3>
+          <ul class="list">
+            <li>freeCodeCamp – full web dev curriculum</li>
+            <li>Codecademy – interactive HTML/CSS/JS basics</li>
+            <li>Official Angular & Python docs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools I Recommend</h3>
+          <ul class="list">
+            <li>VS Code with helpful extensions</li>
+            <li>Git & GitHub for version control</li>
+            <li>Netlify / Vercel / GitHub Pages for hosting</li>
+          </ul>
+          <p class="note">
+            Future: add affiliate links here (courses, hosting, tools).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About This Site</h2>
+      <p>
+        I created Coding Learning Hub to document my journey learning Angular and Python,
+        and to help other beginners build real projects step by step.
+      </p>
+      <p>
+        New tutorials are added regularly. Stay tuned!
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Coding Learning Hub · All rights reserved.</p>
+      <p class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
